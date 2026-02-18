@@ -1,9 +1,9 @@
 <launch>
     <let name="urdf_path"
-         value="$(find-pkg-share amber_urdf_description)/urdf/right_hand.urdf"/>
+         value="$(find-pkg-share bimanual_description)/urdf/right_hand.urdf"/>
 
     <let name="rviz_config_path"
-         value="$(find-pkg-share amber_urdf_description)/rviz/right_hand.rviz"/>
+         value="$(find-pkg-share bimanual_description)/rviz/right_hand.rviz"/>
 
     <node pkg="robot_state_publisher"
           exec="robot_state_publisher"
