@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="pr09_l_asm">
+    <link name="Hand_Dummy_Link">
+        <inertial>
+            <origin xyz="0.005225293286338956 -0.012599426991124157 0.0020451214063348525" rpy="0.0 0.0 0.0" />
+            <mass value="0.3910884625888437" />
+            <inertia ixx="0.0002614254715097176" iyy="0.00034409181447997813" izz="0.0002488275564839072" ixy="-1.4061955931010223e-05" iyz="1.9943177477663173e-06" ixz="1.954982258724314e-05" />
+        </inertial>
+        <visual name="Hand_Dummy_Link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Hand_Dummy_Link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 파랑 -->
+            <material name="blue">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+            </material>
+        </visual>
+        <collision name="Hand_Dummy_Link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Hand_Dummy_Link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Mid_1">
+        <inertial>
+            <origin xyz="0.005334347782316222 0.024914538233382532 0.02688776817610708" rpy="0.0 -0.0 0.0" />
+            <mass value="0.01135237004297818" />
+            <inertia ixx="5.9796794759358874e-06" iyy="3.3329892559482557e-06" izz="3.3781072913013372e-06" ixy="-4.309385475621382e-07" iyz="-1.017742299443513e-06" ixz="-1.501682506574446e-07" />
+        </inertial>
+        <visual name="Mid_1_visual">
+            <origin xyz="-0.018324006105325523 -0.006669392794851177 0.045" rpy="0.0 -0.0 0.3490658503988658" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Mid_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 회색 -->
+            <material name="gray">
+                <color rgba="0.6 0.6 0.6 1.0"/>
+            </material>
+        </visual>
+        <collision name="Mid_1_collision">
+            <origin xyz="-0.018324006105325523 -0.006669392794851177 0.045" rpy="0.0 -0.0 0.3490658503988658" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Mid_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Mid_2">
+        <inertial>
+            <origin xyz="0.00786902725773283 -0.03133595274309738 0.025776708786415473" rpy="0.0 -0.0 0.0" />
+            <mass value="0.018045854271835894" />
+            <inertia ixx="8.550206261860186e-06" iyy="4.535872150857837e-06" izz="5.088026603933645e-06" ixy="8.462213230767395e-07" iyz="8.503621249006363e-07" ixz="-2.1000644984050878e-07" />
+        </inertial>
+        <visual name="Mid_2_visual">
+            <origin xyz="-0.018835553612636252 0.005046971379499019 0.045" rpy="3.141592653589793 -0.0 -0.26179938779914924" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Mid_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 회색 -->
+            <material name="gray">
+                <color rgba="0.6 0.6 0.6 1.0"/>
+            </material>
+        </visual>
+        <collision name="Mid_2_collision">
+            <origin xyz="-0.018835553612636252 0.005046971379499019 0.045" rpy="3.141592653589793 -0.0 -0.26179938779914924" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Mid_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Mid_3">
+        <inertial>
+            <origin xyz="-0.005656949122620232 0.025941544430873244 0.02363307221266836" rpy="0.0 -0.0 0.0" />
+            <mass value="0.013063785322842449" />
+            <inertia ixx="7.027515973024439e-06" iyy="4.035618880869237e-06" izz="3.839200933857428e-06" ixy="5.288227031218235e-07" iyz="7.739797660225584e-08" ixz="-1.8165632828155912e-08" />
+        </inertial>
+        <visual name="Mid_3_visual">
+            <origin xyz="0.01883555361263626 -0.005046971379499022 0.016499999999999997" rpy="0.0 -0.0 -0.26179938779914935" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Mid_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 회색 -->
+            <material name="gray">
+                <color rgba="0.6 0.6 0.6 1.0"/>
+            </material>
+        </visual>
+        <collision name="Mid_3_collision">
+            <origin xyz="0.01883555361263626 -0.005046971379499022 0.016499999999999997" rpy="0.0 -0.0 -0.26179938779914935" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Mid_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Top_1">
+        <inertial>
+            <origin xyz="0.00023932327359271088 0.0292511618757674 0.008500003672655153" rpy="0.0 -0.0 0.0" />
+            <mass value="0.01814214378355514" />
+            <inertia ixx="3.3369684091379533e-06" iyy="1.0066787142730742e-06" izz="3.1736604195293713e-06" ixy="-7.041660452772176e-09" iyz="-1.1245861741702092e-12" ixz="-1.9835751659637914e-13" />
+        </inertial>
+        <visual name="Top_1_visual">
+            <origin xyz="-0.05942773049492528 -0.01495908382090014 0.01849999999999938" rpy="5.695174511898703e-15 -8.814699882250395e-15 -0.5846852994181003" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Top_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 초록 -->
+            <material name="green">
+                <color rgba="0.0 1.0 0.0 1.0"/>
+            </material>
+        </visual>
+        <collision name="Top_1_collision">
+            <origin xyz="-0.05942773049492528 -0.01495908382090014 0.01849999999999938" rpy="5.695174511898703e-15 -8.814699882250395e-15 -0.5846852994181003" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Top_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Top_2">
+        <inertial>
+            <origin xyz="-1.1761597189705598e-05 0.02972293148308336 -0.015000001617734184" rpy="0.0 -0.0 0.0" />
+            <mass value="0.030081993059657204" />
+            <inertia ixx="7.379369352152773e-06" iyy="3.5500295579894517e-06" izz="5.293784669263801e-06" ixy="-1.4253655433133335e-07" iyz="5.306587959851007e-13" ixz="1.0631163714657815e-13" />
+        </inertial>
+        <visual name="Top_2_visual">
+            <origin xyz="-0.05985214499232842 1.4055451694892085e-05 -0.0315" rpy="0.0 -0.0 -0.9075712110370516" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Top_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 초록 -->
+            <material name="green">
+                <color rgba="0.0 1.0 0.0 1.0"/>
+            </material>
+        </visual>
+        <collision name="Top_2_collision">
+            <origin xyz="-0.05985214499232842 1.4055451694892085e-05 -0.0315" rpy="0.0 -0.0 -0.9075712110370516" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Top_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Top_3">
+        <inertial>
+            <origin xyz="0.0005304965065775847 -0.02971819921872557 -0.015000001493956172" rpy="0.0 -0.0 0.0" />
+            <mass value="0.030081993059657197" />
+            <inertia ixx="7.383177400036576e-06" iyy="3.5462214281928315e-06" izz="5.2937846692678126e-06" ixy="-7.562870916445708e-08" iyz="-6.469249066293464e-13" ixz="-3.1788353179395493e-13" />
+        </inertial>
+        <visual name="Top_3_visual">
+            <origin xyz="0.05984327454217578 0.0010305106993177303 -0.009499999999999996" rpy="3.141592653589793 -0.0 -0.8901179185171082" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Top_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <!-- 초록 -->
+            <material name="green">
+                <color rgba="0.0 1.0 0.0 1.0"/>
+            </material>
+        </visual>
+        <collision name="Top_3_collision">
+            <origin xyz="0.05984327454217578 0.0010305106993177303 -0.009499999999999996" rpy="3.141592653589793 -0.0 -0.8901179185171082" />
+            <geometry>
+                <mesh filename="package://bimanual_description/meshes/left_hand/Top_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Dummy_Mid_1" type="continuous">
+        <origin xyz="0.0195 0.0 -0.044925" rpy="0.0 -0.0 -0.934" />
+        <parent link="Hand_Dummy_Link" />
+        <child link="Mid_1" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="Dummy_Mid_2" type="continuous">
+        <origin xyz="0.0195 0.0 0.044925" rpy="3.141592653589793 -0.0 -0.934" />
+        <parent link="Hand_Dummy_Link" />
+        <child link="Mid_2" />
+        <axis xyz="0.0 0.0 -1.0" />
+    </joint>
+    <joint name="Dummy_Mid_3" type="continuous">
+        <origin xyz="-0.0195 0.0 -0.016425000000000002" rpy="0.0 -0.0 0.934" />
+        <parent link="Hand_Dummy_Link" />
+        <child link="Mid_3" />
+        <axis xyz="0.0 0.0 -1.0" />
+    </joint>
+    <joint name="Mid_Top_1" type="continuous">
+        <origin xyz="0.005000000000000003 0.05 0.026499999999999996" rpy="0.0 -0.0 0.0" />
+        <parent link="Mid_1" />
+        <child link="Top_1" />
+        <axis xyz="0.0 0.0 1.0" />
+        <mimic joint="Dummy_Mid_1" multiplier="1.6" offset="0.0"/>
+    </joint>
+    <joint name="Mid_Top_2" type="continuous">
+        <origin xyz="0.00456348 -0.05004173 0.013499999999999996" rpy="3.141592653589793 -0.0 -2.7755575615628907e-17" />
+        <parent link="Mid_2" />
+        <child link="Top_2" />
+        <axis xyz="0.0 0.0 1.0" />
+        <mimic joint="Dummy_Mid_2" multiplier="1.6" offset="0.0"/>
+    </joint>
+    <joint name="Mid_Top_3" type="continuous">
+        <origin xyz="-0.00456348 0.05004173 0.007000000000000001" rpy="3.141592653589793 -0.0 -2.7755575615628914e-17" />
+        <parent link="Mid_3" />
+        <child link="Top_3" />
+        <axis xyz="0.0 -0.0 1.0" />
+        <mimic joint="Dummy_Mid_3" multiplier="1.6" offset="0.0"/>
+    </joint>
+</robot>
